@@ -86,10 +86,12 @@ console.log(
 );
 let arr = [1, 2, 3, 4];
 console.log("Original Array: ", arr);
-arr = arr.map(function (val) {
-  return ++val;
-});
-console.log("Modified Array: ", arr);
+const addedArray = [];
+for (i = 0; i < arr.length; i++) {
+  const addedOne = arr[i] + 1;
+  addedArray.push(addedOne);
+}
+console.log("Modified Array: ", addedArray);
 
 /* EXTRA 8 
  Replace all the strings contained in an array with their length.
